@@ -55,8 +55,8 @@ model, tokenizer and aligner, to perform the forced alignment with less code.
 
  .. code-block:: none
 
-    2.3.0.dev20240129
-    2.2.0.dev20240130
+    2.3.0.dev20240313
+    2.2.0.dev20240314
     cuda
 
 
@@ -410,6 +410,8 @@ German
 
  .. code-block:: none
 
+    /pytorch/audio/ci_env/lib/python3.10/site-packages/torch/nn/modules/conv.py:306: UserWarning: Plan failed with a cudnnException: CUDNN_BACKEND_EXECUTION_PLAN_DESCRIPTOR: cudnnFinalize Descriptor Failed cudnn_status: CUDNN_STATUS_NOT_SUPPORTED (Triggered internally at /opt/conda/conda-bld/pytorch_1710315958894/work/aten/src/ATen/native/cudnn/Conv_v8.cpp:919.)
+      return F.conv1d(input, weight, bias, self.stride,
     Raw Transcript:  aber seit ich bei ihnen das brot hole
     Normalized Transcript:  aber seit ich bei ihnen das brot hole
 
@@ -760,6 +762,8 @@ However this is not needed if you only want character-level alignments.
 
  .. code-block:: none
 
+    /pytorch/audio/ci_env/lib/python3.10/site-packages/torch/nn/modules/conv.py:306: UserWarning: Plan failed with a cudnnException: CUDNN_BACKEND_EXECUTION_PLAN_DESCRIPTOR: cudnnFinalize Descriptor Failed cudnn_status: CUDNN_STATUS_NOT_SUPPORTED (Triggered internally at /opt/conda/conda-bld/pytorch_1710315958894/work/aten/src/ATen/native/cudnn/Conv_v8.cpp:919.)
+      return F.conv1d(input, weight, bias, self.stride,
     Raw Transcript:  关 服务 高端 产品 仍 处于 供不应求 的 局面
     Normalized Transcript:  guan fuwu gaoduan chanpin reng chuyu gongbuyingqiu de jumian
 
@@ -1121,6 +1125,8 @@ Polish
 
  .. code-block:: none
 
+    /pytorch/audio/ci_env/lib/python3.10/site-packages/torch/nn/modules/conv.py:306: UserWarning: Plan failed with a cudnnException: CUDNN_BACKEND_EXECUTION_PLAN_DESCRIPTOR: cudnnFinalize Descriptor Failed cudnn_status: CUDNN_STATUS_NOT_SUPPORTED (Triggered internally at /opt/conda/conda-bld/pytorch_1710315958894/work/aten/src/ATen/native/cudnn/Conv_v8.cpp:919.)
+      return F.conv1d(input, weight, bias, self.stride,
     Raw Transcript:  wtedy ujrzałem na jego brzuchu okrągłą czarną ranę
     Normalized Transcript:  wtedy ujrzalem na jego brzuchu okragla czarna rane
 
@@ -1452,6 +1458,8 @@ Portuguese
 
  .. code-block:: none
 
+    /pytorch/audio/ci_env/lib/python3.10/site-packages/torch/nn/modules/conv.py:306: UserWarning: Plan failed with a cudnnException: CUDNN_BACKEND_EXECUTION_PLAN_DESCRIPTOR: cudnnFinalize Descriptor Failed cudnn_status: CUDNN_STATUS_NOT_SUPPORTED (Triggered internally at /opt/conda/conda-bld/pytorch_1710315958894/work/aten/src/ATen/native/cudnn/Conv_v8.cpp:919.)
+      return F.conv1d(input, weight, bias, self.stride,
     Raw Transcript:  na imensa extensão onde se esconde o inconsciente imortal
     Normalized Transcript:  na imensa extensao onde se esconde o inconsciente imortal
 
@@ -2039,7 +2047,7 @@ forced aligner API.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.648 seconds)
+   **Total running time of the script:** ( 0 minutes  3.692 seconds)
 
 
 .. _sphx_glr_download_tutorials_forced_alignment_for_multilingual_data_tutorial.py:

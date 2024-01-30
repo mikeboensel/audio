@@ -10,7 +10,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Forced alignment for multilingual data &mdash; Torchaudio 2.2.0.dev20240130 documentation</title>
+  <title>Forced alignment for multilingual data &mdash; Torchaudio 2.2.0.dev20240314 documentation</title>
   
 
   
@@ -224,7 +224,7 @@
           <div class="pytorch-left-menu-search">
             
     <div class="version">
-      <a href="../../versions.html"><span style="font-size:110%">2.2.0.dev20240130 &#x25BC</span></a>
+      <a href="../../versions.html"><span style="font-size:110%">2.2.0.dev20240314 &#x25BC</span></a>
     </div>
     
 
@@ -481,8 +481,8 @@ model, tokenizer and aligner, to perform the forced alignment with less code.</p
 <span class="nb">print</span><span class="p">(</span><a href="https://pytorch.org/docs/stable/tensor_attributes.html#torch.device" title="torch.device" class="sphx-glr-backref-module-torch sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">device</span></a><span class="p">)</span>
 </pre></div>
 </div>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>2.3.0.dev20240129
-2.2.0.dev20240130
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>2.3.0.dev20240313
+2.2.0.dev20240314
 cuda
 </pre></div>
 </div>
@@ -678,7 +678,9 @@ To avoid this, one needs to romanize numbers, but this is known to be a non-triv
 <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">Audio</span><span class="p">(</span><a href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="torch.Tensor" class="sphx-glr-backref-module-torch sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">waveform</span></a><span class="p">,</span> <span class="n">rate</span><span class="o">=</span><a href="https://docs.python.org/3/library/functions.html#int" title="builtins.int" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">sample_rate</span></a><span class="p">)</span>
 </pre></div>
 </div>
-<img src="../_images/sphx_glr_forced_alignment_for_multilingual_data_tutorial_001.png" srcset="../_images/sphx_glr_forced_alignment_for_multilingual_data_tutorial_001.png" alt="Emission" class = "sphx-glr-single-img"/><div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>Raw Transcript:  aber seit ich bei ihnen das brot hole
+<img src="../_images/sphx_glr_forced_alignment_for_multilingual_data_tutorial_001.png" srcset="../_images/sphx_glr_forced_alignment_for_multilingual_data_tutorial_001.png" alt="Emission" class = "sphx-glr-single-img"/><div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/pytorch/audio/ci_env/lib/python3.10/site-packages/torch/nn/modules/conv.py:306: UserWarning: Plan failed with a cudnnException: CUDNN_BACKEND_EXECUTION_PLAN_DESCRIPTOR: cudnnFinalize Descriptor Failed cudnn_status: CUDNN_STATUS_NOT_SUPPORTED (Triggered internally at /opt/conda/conda-bld/pytorch_1710315958894/work/aten/src/ATen/native/cudnn/Conv_v8.cpp:919.)
+  return F.conv1d(input, weight, bias, self.stride,
+Raw Transcript:  aber seit ich bei ihnen das brot hole
 Normalized Transcript:  aber seit ich bei ihnen das brot hole
 </pre></div>
 </div>
@@ -843,7 +845,9 @@ However this is not needed if you only want character-level alignments.</p>
 <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">Audio</span><span class="p">(</span><a href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="torch.Tensor" class="sphx-glr-backref-module-torch sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">waveform</span></a><span class="p">,</span> <span class="n">rate</span><span class="o">=</span><a href="https://docs.python.org/3/library/functions.html#int" title="builtins.int" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">sample_rate</span></a><span class="p">)</span>
 </pre></div>
 </div>
-<img src="../_images/sphx_glr_forced_alignment_for_multilingual_data_tutorial_002.png" srcset="../_images/sphx_glr_forced_alignment_for_multilingual_data_tutorial_002.png" alt="Emission" class = "sphx-glr-single-img"/><div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>Raw Transcript:  关 服务 高端 产品 仍 处于 供不应求 的 局面
+<img src="../_images/sphx_glr_forced_alignment_for_multilingual_data_tutorial_002.png" srcset="../_images/sphx_glr_forced_alignment_for_multilingual_data_tutorial_002.png" alt="Emission" class = "sphx-glr-single-img"/><div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/pytorch/audio/ci_env/lib/python3.10/site-packages/torch/nn/modules/conv.py:306: UserWarning: Plan failed with a cudnnException: CUDNN_BACKEND_EXECUTION_PLAN_DESCRIPTOR: cudnnFinalize Descriptor Failed cudnn_status: CUDNN_STATUS_NOT_SUPPORTED (Triggered internally at /opt/conda/conda-bld/pytorch_1710315958894/work/aten/src/ATen/native/cudnn/Conv_v8.cpp:919.)
+  return F.conv1d(input, weight, bias, self.stride,
+Raw Transcript:  关 服务 高端 产品 仍 处于 供不应求 的 局面
 Normalized Transcript:  guan fuwu gaoduan chanpin reng chuyu gongbuyingqiu de jumian
 </pre></div>
 </div>
@@ -1015,7 +1019,9 @@ Normalized Transcript:  guan fuwu gaoduan chanpin reng chuyu gongbuyingqiu de ju
 <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">Audio</span><span class="p">(</span><a href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="torch.Tensor" class="sphx-glr-backref-module-torch sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">waveform</span></a><span class="p">,</span> <span class="n">rate</span><span class="o">=</span><a href="https://docs.python.org/3/library/functions.html#int" title="builtins.int" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">sample_rate</span></a><span class="p">)</span>
 </pre></div>
 </div>
-<img src="../_images/sphx_glr_forced_alignment_for_multilingual_data_tutorial_003.png" srcset="../_images/sphx_glr_forced_alignment_for_multilingual_data_tutorial_003.png" alt="Emission" class = "sphx-glr-single-img"/><div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>Raw Transcript:  wtedy ujrzałem na jego brzuchu okrągłą czarną ranę
+<img src="../_images/sphx_glr_forced_alignment_for_multilingual_data_tutorial_003.png" srcset="../_images/sphx_glr_forced_alignment_for_multilingual_data_tutorial_003.png" alt="Emission" class = "sphx-glr-single-img"/><div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/pytorch/audio/ci_env/lib/python3.10/site-packages/torch/nn/modules/conv.py:306: UserWarning: Plan failed with a cudnnException: CUDNN_BACKEND_EXECUTION_PLAN_DESCRIPTOR: cudnnFinalize Descriptor Failed cudnn_status: CUDNN_STATUS_NOT_SUPPORTED (Triggered internally at /opt/conda/conda-bld/pytorch_1710315958894/work/aten/src/ATen/native/cudnn/Conv_v8.cpp:919.)
+  return F.conv1d(input, weight, bias, self.stride,
+Raw Transcript:  wtedy ujrzałem na jego brzuchu okrągłą czarną ranę
 Normalized Transcript:  wtedy ujrzalem na jego brzuchu okragla czarna rane
 </pre></div>
 </div>
@@ -1174,7 +1180,9 @@ Normalized Transcript:  wtedy ujrzalem na jego brzuchu okragla czarna rane
 <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">Audio</span><span class="p">(</span><a href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="torch.Tensor" class="sphx-glr-backref-module-torch sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">waveform</span></a><span class="p">,</span> <span class="n">rate</span><span class="o">=</span><a href="https://docs.python.org/3/library/functions.html#int" title="builtins.int" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">sample_rate</span></a><span class="p">)</span>
 </pre></div>
 </div>
-<img src="../_images/sphx_glr_forced_alignment_for_multilingual_data_tutorial_004.png" srcset="../_images/sphx_glr_forced_alignment_for_multilingual_data_tutorial_004.png" alt="Emission" class = "sphx-glr-single-img"/><div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>Raw Transcript:  na imensa extensão onde se esconde o inconsciente imortal
+<img src="../_images/sphx_glr_forced_alignment_for_multilingual_data_tutorial_004.png" srcset="../_images/sphx_glr_forced_alignment_for_multilingual_data_tutorial_004.png" alt="Emission" class = "sphx-glr-single-img"/><div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/pytorch/audio/ci_env/lib/python3.10/site-packages/torch/nn/modules/conv.py:306: UserWarning: Plan failed with a cudnnException: CUDNN_BACKEND_EXECUTION_PLAN_DESCRIPTOR: cudnnFinalize Descriptor Failed cudnn_status: CUDNN_STATUS_NOT_SUPPORTED (Triggered internally at /opt/conda/conda-bld/pytorch_1710315958894/work/aten/src/ATen/native/cudnn/Conv_v8.cpp:919.)
+  return F.conv1d(input, weight, bias, self.stride,
+Raw Transcript:  na imensa extensão onde se esconde o inconsciente imortal
 Normalized Transcript:  na imensa extensao onde se esconde o inconsciente imortal
 </pre></div>
 </div>
@@ -1462,7 +1470,7 @@ speech data to transcripts in five languages.</p>
 <p>Thanks to <a class="reference external" href="mailto:vineelkpratap&#37;&#52;&#48;meta&#46;com">Vineel Pratap</a> and <a class="reference external" href="mailto:zni&#37;&#52;&#48;meta&#46;com">Zhaoheng
 Ni</a> for developing and open-sourcing the
 forced aligner API.</p>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  3.648 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  3.692 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-tutorials-forced-alignment-for-multilingual-data-tutorial-py">
 <div class="sphx-glr-download sphx-glr-download-python docutils container">
 <p><a class="reference download internal" download="" href="../_downloads/a662d1f1f11633103b4b95ad4b68013c/forced_alignment_for_multilingual_data_tutorial.py"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">forced_alignment_for_multilingual_data_tutorial.py</span></code></a></p>

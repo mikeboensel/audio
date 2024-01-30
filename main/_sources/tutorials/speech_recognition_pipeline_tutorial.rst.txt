@@ -76,8 +76,8 @@ Preparation
 
  .. code-block:: none
 
-    2.3.0.dev20240129
-    2.2.0.dev20240130
+    2.3.0.dev20240313
+    2.2.0.dev20240314
     cuda
 
 
@@ -103,7 +103,7 @@ Preparation
 
  .. code-block:: none
 
-      0%|          | 0.00/106k [00:00<?, ?B/s]    100%|##########| 106k/106k [00:00<00:00, 59.8MB/s]
+      0%|          | 0.00/106k [00:00<?, ?B/s]    100%|##########| 106k/106k [00:00<00:00, 45.1MB/s]
 
 
 
@@ -188,7 +188,7 @@ fetch the pre-trained weights and load it into the model.
  .. code-block:: none
 
     Downloading: "https://download.pytorch.org/torchaudio/models/wav2vec2_fairseq_base_ls960_asr_ls960.pth" to /root/.cache/torch/hub/checkpoints/wav2vec2_fairseq_base_ls960_asr_ls960.pth
-      0%|          | 0.00/360M [00:00<?, ?B/s]     13%|#2        | 45.8M/360M [00:00<00:00, 480MB/s]     25%|##5       | 91.5M/360M [00:00<00:00, 419MB/s]     37%|###6      | 132M/360M [00:00<00:00, 422MB/s]      48%|####8     | 173M/360M [00:00<00:00, 373MB/s]     59%|#####8    | 211M/360M [00:00<00:00, 381MB/s]     69%|######8   | 248M/360M [00:00<00:00, 297MB/s]     81%|########1 | 292M/360M [00:00<00:00, 339MB/s]     91%|######### | 327M/360M [00:00<00:00, 339MB/s]    100%|##########| 360M/360M [00:01<00:00, 346MB/s]
+      0%|          | 0.00/360M [00:00<?, ?B/s]      4%|4         | 15.0M/360M [00:00<00:02, 156MB/s]      9%|9         | 33.1M/360M [00:00<00:01, 175MB/s]     18%|#8        | 65.5M/360M [00:00<00:01, 247MB/s]     29%|##9       | 105M/360M [00:00<00:00, 314MB/s]      41%|####      | 148M/360M [00:00<00:00, 360MB/s]     52%|#####2    | 188M/360M [00:00<00:00, 382MB/s]     67%|######6   | 240M/360M [00:00<00:00, 435MB/s]     79%|#######8  | 284M/360M [00:00<00:00, 442MB/s]     90%|######### | 326M/360M [00:00<00:00, 437MB/s]    100%|##########| 360M/360M [00:01<00:00, 363MB/s]
     <class 'torchaudio.models.wav2vec2.model.Wav2Vec2Model'>
 
 
@@ -288,6 +288,13 @@ The next step is to extract acoustic features from the audio.
 
 
 
+
+.. rst-class:: sphx-glr-script-out
+
+ .. code-block:: none
+
+    /pytorch/audio/ci_env/lib/python3.10/site-packages/torch/nn/modules/conv.py:306: UserWarning: Plan failed with a cudnnException: CUDNN_BACKEND_EXECUTION_PLAN_DESCRIPTOR: cudnnFinalize Descriptor Failed cudnn_status: CUDNN_STATUS_NOT_SUPPORTED (Triggered internally at /opt/conda/conda-bld/pytorch_1710315958894/work/aten/src/ATen/native/cudnn/Conv_v8.cpp:919.)
+      return F.conv1d(input, weight, bias, self.stride,
 
 
 
@@ -547,7 +554,7 @@ a model and getting the emission is as short as two lines.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  6.832 seconds)
+   **Total running time of the script:** ( 0 minutes  6.762 seconds)
 
 
 .. _sphx_glr_download_tutorials_speech_recognition_pipeline_tutorial.py:
